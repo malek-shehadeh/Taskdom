@@ -12,15 +12,14 @@
 // }
 ///////////////////////////////////////////
 // Q2
+let array = [1, 2, 3, 4, 5];
 function indexof(array, num) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === num) {
       return i;
-    } else {
-      return -1;
     }
   }
+  return -1;
 }
-const array = [1, 2, 3, 4, 5];
 
-console.log(array, 7);
+console.log(indexof(array, 5));
